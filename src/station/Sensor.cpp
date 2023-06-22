@@ -9,6 +9,8 @@ Sensor::Sensor() {
 }
 
 void Sensor::init() {
+    delay(DELAY_100MS);
+
     if (!bme.begin(0x76)) {
         Serial.println("[WARNING] Could not find a valid BME280 sensor, check wiring!");
         while (1);
