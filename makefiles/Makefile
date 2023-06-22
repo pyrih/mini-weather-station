@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OUTPUT = "./src/station/secrets.h"
+OUTPUT = "./src/station/Secrets.h"
 
 secrets:
 	@echo "Generating $(OUTPUT)"
