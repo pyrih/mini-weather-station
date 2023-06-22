@@ -11,15 +11,18 @@ public:
 
     void init();
 
-    void read();
+    float getTemperature();
+
+    float getHumidity();
+
+    float getPressureHpa();
+
+    float getPressureMmhg();
+
+    float getAltitude();
 
 private:
     Adafruit_BME280 bme;
-    float temperature;
-    float humidity;
-    float pressure_hpa;
-    float pressure_mmhg;
-    float altitude;
 };
 
 #endif

@@ -17,10 +17,22 @@ void Sensor::init() {
     }
 }
 
-void Sensor::read() {
-    temperature = bme.readTemperature();
-    humidity = bme.readHumidity();
-    pressure_hpa = bme.readPressure() / DIVIDER_OF_100;
-    pressure_mmhg = bme.readPressure() / DIVIDER_OF_100 * HPA_TO_MMHG_MULTIPLIER;
-    altitude = bme.readAltitude(SEA_LEVEL_PRESSURE_HPA);
+float Sensor::getTemperature() {
+    return bme.readTemperature();
+}
+
+float Sensor::getHumidity() {
+    return bme.readHumidity();
+}
+
+float Sensor::getPressureHpa() {
+    return bme.readPressure() / DIVIDER_OF_100;
+}
+
+float Sensor::getPressureMmhg() {
+    return bme.readPressure() / DIVIDER_OF_100 * HPA_TO_MMHG_MULTIPLIER;
+}
+
+float Sensor::getAltitude() {
+    return bme.readAltitude(SEA_LEVEL_PRESSURE_HPA);
 }

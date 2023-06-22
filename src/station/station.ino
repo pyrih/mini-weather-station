@@ -15,6 +15,8 @@ void setup() {
 
 void loop() {
     // put your main code here, to run repeatedly
-    sensor.read();
+    int temperature = (int) sensor.getTemperature();
+    Serial.println(temperature);
+
     delay(1000);
 }
