@@ -1,16 +1,16 @@
 #include "Constants.h"
+#include "Network.h"
 #include "Secrets.h"
 #include "Sensor.h"
-
-const char *ssid = SECRET_SSID;
-const char *pass = SECRET_PASS;
 
 Sensor sensor;
 
 void setup() {
     // put your setup code here, to run once
     Serial.begin(115200);
+
     sensor.init();
+    connectToWiFi();
 }
 
 void loop() {
@@ -18,5 +18,5 @@ void loop() {
     int temperature = (int) sensor.getTemperature();
     Serial.println(temperature);
 
-    delay(1000);
+    delay(DELAY_1S);
 }

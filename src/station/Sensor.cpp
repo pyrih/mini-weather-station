@@ -1,5 +1,5 @@
-#include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
+#include <Adafruit_Sensor.h>
 
 #include "Constants.h"
 #include "Sensor.h"
@@ -30,7 +30,7 @@ float Sensor::getPressureHpa() {
 }
 
 float Sensor::getPressureMmhg() {
-    return bme.readPressure() / DIVIDER_OF_100 * HPA_TO_MMHG_MULTIPLIER;
+    return getPressureHpa() * HPA_TO_MMHG_MULTIPLIER;
 }
 
 float Sensor::getAltitude() {

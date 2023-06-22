@@ -1,8 +1,8 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
+#include <Adafruit_Sensor.h>
 
 class Sensor {
 
