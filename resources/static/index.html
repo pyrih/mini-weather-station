@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Weather Station</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+</head>
+<body>
+<h1>ESP8266 Weather Station</h1>
+<h4>Powered by Andrii Pyrih</h4>
+<div class='container'>
+    <div class='data temperature'>
+        <div class='side-by-side icon'>
+            <img src="icons/temperature.svg" alt="auto"/>
+        </div>
+        <div class='side-by-side text'>Temperature</div>
+        <div class='side-by-side reading'>
+            <span id="temperature">%TEMPERATURE%</span>
+            <span class='superscript'>&deg;C</span></div>
+    </div>
+    <div class='data humidity'>
+        <div class='side-by-side icon'>
+            <img src="icons/humidity.svg" alt="auto"/>
+        </div>
+        <div class='side-by-side text'>Humidity</div>
+        <div class='side-by-side reading'>
+            <span id="humidity">%HUMIDITY%</span>
+            <span class='superscript'>%</span></div>
+    </div>
+    <div class='data pressure'>
+        <div class='side-by-side icon'>
+            <img src="icons/pressure.svg" alt="auto"/>
+        </div>
+        <div class='side-by-side text'>Pressure</div>
+        <div class='side-by-side reading'>
+            <span id="pressure-hpa">%PRESSURE_HPA%</span>
+            <span class='superscript'>hPa</span></div>
+    </div>
+    <div class='data pressure'>
+        <div class='side-by-side icon'>
+            <img src="icons/pressure.svg" alt="auto"/>
+        </div>
+        <div class='side-by-side text'>Pressure</div>
+        <div class='side-by-side reading'>
+            <span id="pressure-mmhg">%PRESSURE_MMHG%</span>
+            <span class='superscript'>mmHg</span></div>
+    </div>
+    <div class='data altitude'>
+        <div class='side-by-side icon'>
+            <img src="icons/altitude.svg" alt="auto"/>
+        </div>
+        <div class='side-by-side text'>Altitude</div>
+        <div class='side-by-side reading'>
+            <span id="ALTITUDE">%ALTITUDE%</span>
+            <span class='superscript'>m</span></div>
+    </div>
+</div>
+</body>
