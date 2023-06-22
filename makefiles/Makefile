@@ -1,8 +1,8 @@
 #!/bin/bash
 
-OUTPUT = "./station/secrets.h"
+OUTPUT = "./src/station/secrets.h"
 
-arduino_secrets:
+secrets:
 	@echo "Generating $(OUTPUT)"
 	@[ -e $(OUTPUT) ] && rm $(OUTPUT)
 	@echo "#define SECRET_SSID \"$(WIFI_SSID_NAME)\"" >> $(OUTPUT)

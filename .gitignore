@@ -1,4 +1,4 @@
 .idea
 
 *.iml
-./station/secrets.h
+./src/station/secrets.h
